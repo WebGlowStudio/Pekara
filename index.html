@@ -1,1 +1,701 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pekara Zlatni Klas — svež hleb svako jutro</title>
+  <meta name="description" content="Pekara Zlatni Klas, izmišljena komšijska pekara u Beogradu. Svež hleb, burek, pite i kiflice svako jutro. Demo sajt: WebGlow Studio.">
+  <meta name="theme-color" content="#f4eee4">
+  <meta property="og:title" content="Pekara Zlatni Klas — svež hleb svako jutro">
+  <meta property="og:description" content="Komšijska pekara u Beogradu. Hleb, burek i pite, pečeni u turama od ranog jutra. Demo sajt: WebGlow Studio.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:url" content="https://webglowstudio.github.io/Pekara/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&h=630&q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238C4E2C'/%3E%3Cpath d='M16 27V8' stroke='%23F6F0E6' stroke-width='1.4' stroke-linecap='round'/%3E%3Cellipse cx='16' cy='8' rx='2.2' ry='3.4' fill='%23F6F0E6'/%3E%3Cellipse cx='12.2' cy='12' rx='2.2' ry='3.3' transform='rotate(-32 12.2 12)' fill='%23F6F0E6'/%3E%3Cellipse cx='19.8' cy='12' rx='2.2' ry='3.3' transform='rotate(32 19.8 12)' fill='%23F6F0E6'/%3E%3Cellipse cx='12.4' cy='16.4' rx='2' ry='3' transform='rotate(-30 12.4 16.4)' fill='%23F6F0E6'/%3E%3Cellipse cx='19.6' cy='16.4' rx='2' ry='3' transform='rotate(30 19.6 16.4)' fill='%23F6F0E6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="vrh">
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
 
+  <div class="banner">
+    <p>Demo sajt: WebGlow Studio</p>
+  </div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#vrh">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 42V14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <ellipse cx="24" cy="12" rx="3" ry="5"/>
+          <ellipse cx="17.5" cy="18" rx="3" ry="4.6" transform="rotate(-32 17.5 18)"/>
+          <ellipse cx="30.5" cy="18" rx="3" ry="4.6" transform="rotate(32 30.5 18)"/>
+          <ellipse cx="16.8" cy="25" rx="2.8" ry="4.3" transform="rotate(-30 16.8 25)"/>
+          <ellipse cx="31.2" cy="25" rx="2.8" ry="4.3" transform="rotate(30 31.2 25)"/>
+          <ellipse cx="18" cy="31.5" rx="2.5" ry="3.8" transform="rotate(-26 18 31.5)"/>
+          <ellipse cx="30" cy="31.5" rx="2.5" ry="3.8" transform="rotate(26 30 31.5)"/>
+        </svg>
+        <span>Zlatni Klas</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Otvori meni</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Glavni meni">
+        <a href="#o-nama">O nama</a>
+        <a href="#ponuda">Ponuda</a>
+        <a href="#jutro">Jutro</a>
+        <a href="#galerija">Galerija</a>
+        <a href="#utisci">Utisci</a>
+        <a href="#porudzbina">Porudžbina</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="sadrzaj">
+    <section class="hero" aria-labelledby="hero-naslov">
+      <div class="hero-copy">
+        <svg class="hero-wheat" viewBox="0 0 160 220" aria-hidden="true">
+          <path d="M80 210C78 150 82 90 80 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <g fill="currentColor">
+            <ellipse cx="80" cy="26" rx="8" ry="13"/>
+            <ellipse cx="60" cy="48" rx="8" ry="13" transform="rotate(-34 60 48)"/>
+            <ellipse cx="100" cy="48" rx="8" ry="13" transform="rotate(34 100 48)"/>
+            <ellipse cx="56" cy="74" rx="7.5" ry="12" transform="rotate(-32 56 74)"/>
+            <ellipse cx="104" cy="74" rx="7.5" ry="12" transform="rotate(32 104 74)"/>
+            <ellipse cx="58" cy="100" rx="7" ry="11" transform="rotate(-28 58 100)"/>
+            <ellipse cx="102" cy="100" rx="7" ry="11" transform="rotate(28 102 100)"/>
+            <ellipse cx="62" cy="124" rx="6.5" ry="10" transform="rotate(-24 62 124)"/>
+            <ellipse cx="98" cy="124" rx="6.5" ry="10" transform="rotate(24 98 124)"/>
+          </g>
+        </svg>
+        <div class="hero-copy-inner">
+          <p class="fresh-pill">
+            <span class="steam" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 21c2.2-2.4 2.2-3.6 0-6s-2.2-3.6 0-6"/>
+                <path d="M12 21c2.2-2.4 2.2-3.6 0-6s-2.2-3.6 0-6"/>
+                <path d="M17 21c2.2-2.4 2.2-3.6 0-6s-2.2-3.6 0-6"/>
+              </svg>
+            </span>
+            Upravo iz peći
+          </p>
+          <p class="eyebrow">Komšijska pekara u Beogradu</p>
+          <h1 id="hero-naslov">Svež hleb<br><em>svako jutro.</em></h1>
+          <p class="hero-lead">Još topao iz peći, sa korom koja puca pod prstima. Dok je ulica tiha, kod nas se već mesi.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ponuda">Pogledajte ponudu</a>
+            <a class="btn btn-ghost" href="#porudzbina">Poručite za slavlje</a>
+          </div>
+          <ul class="hero-points">
+            <li><strong>4:30</strong><span>peć se pali</span></li>
+            <li><strong>5:30</strong><span>prvi hleb</span></li>
+            <li><strong>7:00</strong><span>burek i pite</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&h=1800&q=80" width="1600" height="1800" alt="Tri vekne hleba sa semenkama i klasje pšenice na tamnom stolu" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="o-nama" class="section" aria-labelledby="o-nama-naslov">
+      <div class="wrap about">
+        <figure class="about-photo reveal">
+          <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=1200&h=1500&q=80" width="1200" height="1500" alt="Narezan rustični hleb na drvenoj dasci" loading="lazy">
+          <figcaption>Hleb se seče tek kad kora malo odahne.</figcaption>
+        </figure>
+        <div class="about-copy reveal" style="--d: 80ms">
+          <p class="kicker">O nama</p>
+          <h2 id="o-nama-naslov">Dok je napolju tiho, testo već radi.</h2>
+          <p>Pekara Zlatni Klas je mala komšijska pekara u Beogradu. Svako jutro mesi se iznova: brašno, so, kvasac i vreme. Hleb ne stoji od juče. Ako je vekna tu, izašla je iz peći tog dana.</p>
+          <p>Burek vučemo na tanke kore. Pite pravimo po kućnom — sir, krompir, zelje, jabuka. Kiflice su meke dok su tople, a slatko dolazi na red kad peć malo odahne. Ako vas nema jedno jutro, fali nam taj red na pultu.</p>
+          <ul class="facts">
+            <li>
+              <span class="fact-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 10v6l4 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>Peć u 4:30</strong> Mesimo dok grad još spava, da prvi hleb stigne do šest.</span>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 26V9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="16" cy="8.5" rx="2.1" ry="3.1" fill="currentColor"/><ellipse cx="11.6" cy="13" rx="2" ry="3" transform="rotate(-32 11.6 13)" fill="currentColor"/><ellipse cx="20.4" cy="13" rx="2" ry="3" transform="rotate(32 20.4 13)" fill="currentColor"/><ellipse cx="12" cy="17.6" rx="1.8" ry="2.6" transform="rotate(-28 12 17.6)" fill="currentColor"/><ellipse cx="20" cy="17.6" rx="1.8" ry="2.6" transform="rotate(28 20 17.6)" fill="currentColor"/></svg>
+              </span>
+              <span><strong>Kratak recept</strong> Brašno, so, kvasac i dovoljno vremena. Ništa što ne biste prepoznali.</span>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="11" cy="13" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="21" cy="13" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 23c1-3 3-4.5 5-4.5S15 20 16 23M16 23c1-3 3-4.5 5-4.5S25 20 26 23" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>Komšijski pult</strong> Znamo ko uzima integralni, a ko burek sa sirom.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ponuda" class="section band" aria-labelledby="ponuda-naslov">
+      <div class="wrap">
+        <div class="menu-board reveal">
+          <div class="menu-head">
+            <div>
+              <p class="kicker">Ponuda</p>
+              <h2 id="ponuda-naslov">Šta danas miriše</h2>
+              <p class="lede">Hleb, peciva, burek i pite, kiflice i slatko. Jelovnik je kratak, onakav kakav stane u jednu peć.</p>
+            </div>
+            <p class="stamp">Cene su primer</p>
+          </div>
+
+          <div class="filters" role="group" aria-label="Kategorije ponude">
+            <button type="button" class="chip is-active" data-filter="sve" aria-pressed="true">Sve</button>
+            <button type="button" class="chip" data-filter="hleb" aria-pressed="false">Hleb</button>
+            <button type="button" class="chip" data-filter="peciva" aria-pressed="false">Peciva</button>
+            <button type="button" class="chip" data-filter="burek" aria-pressed="false">Burek i pite</button>
+            <button type="button" class="chip" data-filter="kiflice" aria-pressed="false">Kiflice</button>
+            <button type="button" class="chip" data-filter="slatko" aria-pressed="false">Slatko</button>
+          </div>
+          <p id="filter-status" class="sr-only" aria-live="polite"></p>
+          <p class="menu-legend">Cene su primer</p>
+
+          <div class="group" data-cat="hleb">
+            <div class="group-head">
+              <h3>Hleb</h3>
+              <p>Vekne od pola šest. Sečemo kad kora malo odahne.</p>
+            </div>
+            <ul class="items">
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Beli hleb</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>90 <span>din</span></p>
+                </div>
+                <p class="item-desc">500 g, mekan, tanka kora</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Integralni</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>130 <span>din</span></p>
+                </div>
+                <p class="item-desc">Sa semenkama suncokreta</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Ražani</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>140 <span>din</span></p>
+                </div>
+                <p class="item-desc">Sporije pečen, duže ostaje svež</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Seoska vekna</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>190 <span>din</span></p>
+                </div>
+                <p class="item-desc">Veća, za ceo sto</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Čabata</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>150 <span>din</span></p>
+                </div>
+                <p class="item-desc">Hrskava kora, meka sredina</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="group" data-cat="peciva">
+            <div class="group-head">
+              <h3>Peciva</h3>
+              <p>Slano, za doručak u ruci.</p>
+            </div>
+            <ul class="items">
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Sa sirom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>100 <span>din</span></p>
+                </div>
+                <p class="item-desc">Topljeno, malo slano</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Sa viršlom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>110 <span>din</span></p>
+                </div>
+                <p class="item-desc">Za doručak usput</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Pogačica</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>80 <span>din</span></p>
+                </div>
+                <p class="item-desc">Masna i mekana</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Integralno pecivo</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>100 <span>din</span></p>
+                </div>
+                <p class="item-desc">Sa semenkama</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Kroasan</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>120 <span>din</span></p>
+                </div>
+                <p class="item-desc">Običan, lisnat</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="group" data-cat="burek">
+            <div class="group-head">
+              <h3>Burek i pite</h3>
+              <p>Tanke kore, fil kao kod kuće.</p>
+            </div>
+            <ul class="items">
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Burek sa mesom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>210 <span>din</span></p>
+                </div>
+                <p class="item-desc">Komad, tanke kore</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Burek sa sirom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>200 <span>din</span></p>
+                </div>
+                <p class="item-desc">Najbolji oko sedam, dok je vruć</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Pita sa krompirom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>180 <span>din</span></p>
+                </div>
+                <p class="item-desc">Po kućnom</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Pita sa zeljem</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>190 <span>din</span></p>
+                </div>
+                <p class="item-desc">Spanać i sir</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Pita sa jabukom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>180 <span>din</span></p>
+                </div>
+                <p class="item-desc">Cimet i malo šećera</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="group" data-cat="kiflice">
+            <div class="group-head">
+              <h3>Kiflice</h3>
+              <p>Mekane dok su tople. I posle su dobre, ali tad su najbolje.</p>
+            </div>
+            <ul class="items">
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Obična kiflica</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>50 <span>din</span></p>
+                </div>
+                <p class="item-desc">Za supu ili sama</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Sa susamom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>60 <span>din</span></p>
+                </div>
+                <p class="item-desc">Ona koju deca traže po imenu</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Sa makom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>60 <span>din</span></p>
+                </div>
+                <p class="item-desc">Malo slatka</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Sa sirom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>70 <span>din</span></p>
+                </div>
+                <p class="item-desc">Slana, mala</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Integralna</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>65 <span>din</span></p>
+                </div>
+                <p class="item-desc">Od integralnog brašna</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="group" data-cat="slatko">
+            <div class="group-head">
+              <h3>Slatko</h3>
+              <p>Štrudle i sitno, kad peć odahne od slanog.</p>
+            </div>
+            <ul class="items">
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Štrudla sa jabukom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>160 <span>din</span></p>
+                </div>
+                <p class="item-desc">Komad, cimet</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Štrudla sa višnjama</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>170 <span>din</span></p>
+                </div>
+                <p class="item-desc">Sezonski, kad ima višanja</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Kroasan sa čokoladom</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>150 <span>din</span></p>
+                </div>
+                <p class="item-desc">Za pauzu oko jedanaest</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Vanilice</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>180 <span>din</span></p>
+                </div>
+                <p class="item-desc">100 g</p>
+              </li>
+              <li class="item">
+                <div class="item-line">
+                  <p class="item-name">Medenjak</p>
+                  <p class="price"><span class="sr-only">Cena, primer: </span>80 <span>din</span></p>
+                </div>
+                <p class="item-desc">Mekan, sa medom</p>
+              </li>
+            </ul>
+          </div>
+
+          <p class="fine menu-foot">Cene su primer. Nisu cene prave pekare — služe samo da se vidi kako jelovnik stoji na sajtu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="jutro" class="section" aria-labelledby="jutro-naslov">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Ture</p>
+          <h2 id="jutro-naslov">Svako jutro sveže</h2>
+          <p class="lede">Ne držimo sve odjednom na pultu. Pečemo u turama, da ono što ponesete bude baš iz peći.</p>
+        </div>
+        <div class="morning">
+          <ol class="timeline reveal">
+            <li>
+              <p class="time">5:30</p>
+              <h3>Prvi hleb i kiflice</h3>
+              <p>Beli, integralni i kiflice sa susamom. Za one koji prolaze dok je ulica još prazna.</p>
+            </li>
+            <li>
+              <p class="time">7:00</p>
+              <h3>Burek i pite</h3>
+              <p>Vruće kore, sir i meso. Najbolji trenutak ako idete na posao.</p>
+            </li>
+            <li>
+              <p class="time">9:15</p>
+              <h3>Druga tura peciva</h3>
+              <p>Pogačice, pecivo sa sirom i viršlom. Još toplo, za kasniji doručak.</p>
+            </li>
+            <li>
+              <p class="time">11:30</p>
+              <h3>Slatko</h3>
+              <p>Štrudla i sitno, kad peć malo odahne od slanog.</p>
+            </li>
+            <li>
+              <p class="time">14:00</p>
+              <h3>Poslednji hleb</h3>
+              <p>Vekna za ručak i za one koji svrate posle posla.</p>
+            </li>
+            <li>
+              <p class="time">16:30</p>
+              <h3>Peć se hladi</h3>
+              <p>Šta je ostalo, ostalo je. Sutra krećemo iznova.</p>
+            </li>
+          </ol>
+          <aside class="morning-card reveal" style="--d: 90ms">
+            <div class="morning-photo">
+              <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=1200&h=1200&q=80" width="1200" height="1200" alt="Okrugli hleb posut brašnom" loading="lazy">
+              <p class="morning-note"><strong>Danas iz peći.</strong> Hleb u pet i po, burek u sedam. Za slavski ručak javite dan ranije.</p>
+            </div>
+          </aside>
+        </div>
+        <p class="fine morning-foot">Radnja se otvara u 6:00. Subotom zatvaramo u 15:00, nedeljom u 13:00. Tačno <a href="#kontakt">radno vreme</a> je u kontaktu. Pred posao je najživlje između sedam i devet.</p>
+      </div>
+    </section>
+
+    <section id="galerija" class="section" aria-labelledby="galerija-naslov">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Galerija</p>
+          <h2 id="galerija-naslov">Iz peći, izbliza</h2>
+          <p class="lede">Hleb, peciva i burek, onako kako izgledaju dok su još topli. Fotografije su besplatne stock fotografije (Unsplash i Pexels), da se vidi raspored galerije.</p>
+        </div>
+        <div class="gallery-grid reveal">
+          <button type="button" class="shot" data-caption="Hleb u vitrini" data-full="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=2000&q=80">
+            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1400&q=80" width="1400" height="1050" alt="Hleb u vitrini: police pune vekni, hleba i bageta" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Hleb u vitrini</span>
+          </button>
+          <button type="button" class="shot" data-caption="Burek" data-full="https://images.pexels.com/photos/38356208/pexels-photo-38356208.jpeg?auto=compress&cs=tinysrgb&w=2000">
+            <img src="https://images.pexels.com/photos/38356208/pexels-photo-38356208.jpeg?auto=compress&cs=tinysrgb&w=1400" width="1400" height="980" alt="Burek: zlatna spiralna kora, izbliza" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Burek</span>
+          </button>
+          <button type="button" class="shot" data-caption="Peciva i kiflice" data-full="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=2000&q=80">
+            <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=1200&q=80" width="1200" height="900" alt="Peciva i kiflice u staklenoj vitrini" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Peciva i kiflice</span>
+          </button>
+          <button type="button" class="shot" data-caption="Korpa hleba" data-full="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=2000&q=80">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=1200&q=80" width="1200" height="900" alt="Korpa sa raznim vrstama hleba i peciva" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Korpa hleba</span>
+          </button>
+          <button type="button" class="shot" data-caption="Pite i burek" data-full="https://images.pexels.com/photos/37603420/pexels-photo-37603420.jpeg?auto=compress&cs=tinysrgb&w=2000">
+            <img src="https://images.pexels.com/photos/37603420/pexels-photo-37603420.jpeg?auto=compress&cs=tinysrgb&w=1200" width="1200" height="800" alt="Pult sa pitama, burekom i pecivom na tacnama" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Pite i burek</span>
+          </button>
+          <button type="button" class="shot" data-caption="Kroasani" data-full="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=2000&q=80">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80" width="1200" height="900" alt="Dva kroasana, jedan posut šećerom u prahu" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Kroasani</span>
+          </button>
+          <button type="button" class="shot" data-caption="Beli hleb" data-full="https://images.unsplash.com/photo-1598373182133-52452f7691ef?auto=format&fit=crop&w=2000&q=80">
+            <img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?auto=format&fit=crop&w=1400&q=80" width="1400" height="933" alt="Narezan beli hleb na dasci" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Beli hleb</span>
+          </button>
+          <button type="button" class="shot" data-caption="Sveže vekne" data-full="https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=2000">
+            <img src="https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=1400" width="1400" height="933" alt="Dve sveže vekne sa zarezom na kori" loading="lazy">
+            <span class="shot-label" aria-hidden="true">Sveže vekne</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="utisci" class="section band" aria-labelledby="utisci-naslov">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Utisci</p>
+          <h2 id="utisci-naslov">Primer utisaka</h2>
+          <p class="lede">Rečenice su izmišljene. Na pravom sajtu ovde bi stajale reči vaših kupaca, onako kako ih vi odobrite.</p>
+        </div>
+        <div class="quotes">
+          <figure class="quote reveal">
+            <span class="qmark" aria-hidden="true">„</span>
+            <blockquote>
+              <p>Hleb miriše kao kod bake. Uzmem jedan za doručak i još jedan, za svaki slučaj.</p>
+            </blockquote>
+            <figcaption>Milica P. · Vračar</figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d: 70ms">
+            <span class="qmark" aria-hidden="true">„</span>
+            <blockquote>
+              <p>Burek u sedam je razlog da krenem ranije. Kore su tanke, sir još vruć.</p>
+            </blockquote>
+            <figcaption>Nikola S. · iz ulice</figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d: 140ms">
+            <span class="qmark" aria-hidden="true">„</span>
+            <blockquote>
+              <p>Za slavu smo naručili pite. Stigle su tople i uredne, gosti su pitali iz koje su pekare.</p>
+            </blockquote>
+            <figcaption>Jelena T. · porodica</figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d: 210ms">
+            <span class="qmark" aria-hidden="true">„</span>
+            <blockquote>
+              <p>Deca hoće kiflu sa susamom, ja integralni. Znaju nas i ostave ako malo zakasnimo.</p>
+            </blockquote>
+            <figcaption>Stefan M. · komšija</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="porudzbina" class="section band band-order" aria-labelledby="porudzbina-naslov">
+      <div class="wrap order">
+        <div class="order-copy reveal">
+          <p class="kicker">Poručivanje</p>
+          <h2 id="porudzbina-naslov">Porudžbina za proslave</h2>
+          <p>Za slave, rođendane i firme spremamo pite, pogače i hleb u većoj količini. Složimo da stignu tople. Napišite povod, datum i šta volite.</p>
+          <p>Na pravom sajtu javili bismo se istog dana da potvrdimo količinu i vreme. Ovde je obrazac samo prikaz: poruka se ne šalje i ništa se ne čuva.</p>
+          <ul class="order-list">
+            <li>Pite sa sirom, krompirom, zeljem ili jabukom</li>
+            <li>Burek, cela tepsija ili na komade</li>
+            <li>Pogače i vekne za slavski sto</li>
+          </ul>
+        </div>
+        <div class="order-card reveal" style="--d: 80ms">
+          <form class="order-form" id="porudzbina-forma" action="#porudzbina" method="post">
+            <p id="form-status" class="form-status" role="status" tabindex="-1" hidden></p>
+            <div class="form-grid">
+              <label>
+                <span>Ime i prezime <abbr title="obavezno">*</abbr></span>
+                <input id="ime" name="ime" type="text" autocomplete="name" required maxlength="80">
+              </label>
+              <label>
+                <span>Telefon <abbr title="obavezno">*</abbr></span>
+                <input id="telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required maxlength="40">
+              </label>
+              <label>
+                <span>Imejl</span>
+                <input id="imejl" name="imejl" type="email" autocomplete="email" inputmode="email" maxlength="80" placeholder="nije obavezno">
+              </label>
+              <label>
+                <span>Datum <abbr title="obavezno">*</abbr></span>
+                <input id="datum" name="datum" type="date" required>
+              </label>
+              <label>
+                <span>Povod <abbr title="obavezno">*</abbr></span>
+                <select id="povod" name="povod" required>
+                  <option value="">Izaberite</option>
+                  <option>Slava</option>
+                  <option>Rođendan</option>
+                  <option>Krštenje</option>
+                  <option>Firmina proslava</option>
+                  <option>Porodično okupljanje</option>
+                  <option>Drugo</option>
+                </select>
+              </label>
+              <label>
+                <span>Okvirno gostiju</span>
+                <input id="gosti" name="gosti" type="number" inputmode="numeric" min="1" max="500" placeholder="npr. 25">
+              </label>
+              <label class="wide">
+                <span>Šta da spremimo <abbr title="obavezno">*</abbr></span>
+                <textarea id="poruka" name="poruka" required maxlength="800" placeholder="Na primer: dve pite sa sirom, jedna sa zeljem i četiri vekne, za nedelju u podne."></textarea>
+              </label>
+            </div>
+            <p class="fine">Polja sa zvezdicom su obavezna. Obrazac ništa ne šalje.</p>
+            <button class="btn btn-primary" type="submit">Pošaljite upit</button>
+          </form>
+          <noscript>
+            <p class="fine">Obrazac na ovom demo sajtu ne šalje poruku. Kratka skripta u pregledaču samo prikazuje demo poruku.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section" aria-labelledby="kontakt-naslov">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Kontakt</p>
+          <h2 id="kontakt-naslov">Svratite dok je hleb topao</h2>
+          <p class="lede">Adresa, telefon i mapa su primer, da vidite raspored. Na pravom sajtu ovde stoje podaci pekare.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="info-stack">
+            <article class="info-card reveal">
+              <h3>Adresa</h3>
+              <p class="primer">Primer adrese</p>
+              <p>Dositejeva 7<br>Stari grad, Beograd</p>
+            </article>
+            <article class="info-card reveal" style="--d: 60ms">
+              <h3>Radno vreme</h3>
+              <dl class="hours-list">
+                <div>
+                  <dt>Ponedeljak–petak</dt>
+                  <dd>6:00–19:00</dd>
+                </div>
+                <div>
+                  <dt>Subota</dt>
+                  <dd>6:00–15:00</dd>
+                </div>
+                <div>
+                  <dt>Nedelja</dt>
+                  <dd>7:00–13:00</dd>
+                </div>
+              </dl>
+            </article>
+            <article class="info-card reveal" style="--d: 120ms">
+              <h3>Javite se</h3>
+              <p><span class="primer">Primer telefona</span><br>011 000 00 00</p>
+              <p><span class="primer">Primer imejla</span><br><span class="email">zdravo@zlatniklas.rs</span></p>
+            </article>
+          </div>
+          <div class="map reveal" style="--d: 80ms" role="img" aria-label="Ilustrovana mapa, primer bez tačne lokacije">
+            <svg viewBox="0 0 640 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="640" height="460" fill="#e7d4b6"/>
+              <g fill="#f7f1e6">
+                <rect x="28" y="28" width="150" height="96" rx="8"/>
+                <rect x="236" y="28" width="150" height="96" rx="8"/>
+                <rect x="430" y="28" width="180" height="150" rx="8"/>
+                <rect x="28" y="176" width="150" height="120" rx="8"/>
+                <rect x="236" y="210" width="150" height="86" rx="8"/>
+                <rect x="430" y="230" width="180" height="150" rx="8"/>
+                <rect x="28" y="340" width="220" height="90" rx="8"/>
+              </g>
+              <rect x="250" y="330" width="140" height="100" rx="10" fill="#ead9b4"/>
+              <g fill="none" stroke="#d2b894" stroke-width="26" stroke-linecap="round">
+                <path d="M0 148H640"/>
+                <path d="M0 318H430"/>
+                <path d="M206 0V460"/>
+                <path d="M408 0V220"/>
+                <path d="M408 300V460"/>
+              </g>
+              <g fill="none" stroke="#efe2cc" stroke-width="2" opacity="0.7">
+                <path d="M0 148H640"/>
+                <path d="M206 0V460"/>
+              </g>
+              <g transform="translate(318,168)">
+                <ellipse cx="0" cy="36" rx="12" ry="5" fill="rgba(44,28,18,0.18)"/>
+                <path fill="#8c4e2c" d="M0 30C-18 10-22-8-13-20-6-30 6-30 13-20 22-8 18 10 0 30z"/>
+                <circle cy="-8" r="6" fill="#fbf7f1"/>
+              </g>
+            </svg>
+            <p class="map-card">
+              <strong>Zlatni Klas</strong>
+              <span>Mapa je primer. Na pravom sajtu ovde stoji mapa sa tačnom adresom.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Pekara Zlatni Klas</p>
+          <p class="footer-tag">Svež hleb svako jutro. Izmišljena komšijska pekara, napravljena kao primer.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Podnožje">
+          <a href="#o-nama">O nama</a>
+          <a href="#ponuda">Ponuda</a>
+          <a href="#jutro">Svako jutro sveže</a>
+          <a href="#galerija">Galerija</a>
+          <a href="#utisci">Primer utisaka</a>
+          <a href="#porudzbina">Porudžbina</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="demo-credit">Demo sajt: WebGlow Studio</p>
+        <p class="footer-place">Beograd</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Uvećana fotografija">
+    <div class="lightbox-bar">
+      <button type="button" class="lightbox-nav" data-dir="-1" aria-label="Prethodna fotografija">‹</button>
+      <button type="button" class="lightbox-close">Zatvori</button>
+      <button type="button" class="lightbox-nav" data-dir="1" aria-label="Sledeća fotografija">›</button>
+    </div>
+    <img alt="" width="1600" height="1100">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
